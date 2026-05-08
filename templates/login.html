@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div style="max-width:300px; margin:auto;">
+  <form method="POST">
+    {% csrf_token %}
+    <input class="form-control mb-2" name="user_id" placeholder="User ID">
+    <input class="form-control mb-2" type="password" name="password" placeholder="Password">
+    <button class="btn btn-primary w-100">Login</button>
+  </form>
+
+  {% if error %}
+    <p class="text-danger mt-2">{{ error }}</p>
+  {% endif %}
+</div>
+{% endblock %}
