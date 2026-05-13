@@ -38,6 +38,23 @@
             Home
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/contact/' %}active fw-semibold text-primary{% endif %}" href="/contact">
+            contact
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/admission/' %}active fw-semibold text-primary{% endif %}" href="/admission">
+            Admission
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/gallery/' %}active fw-semibold text-primary{% endif %}" href="/gallery">
+            Gallery
+          </a>
+        </li>
 
         <li class="nav-item">
           <a class="nav-link {% if request.path == '/about/' %}active fw-semibold text-primary{% endif %}" href="/about/">
@@ -54,7 +71,7 @@
           </a>
 
           <ul class="dropdown-menu dropdown-menu-end shadow">
-            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="dashboard">Dashboard</a></li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item text-danger" href="/logout/">Logout</a></li>

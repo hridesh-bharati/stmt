@@ -1,18 +1,76 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Login | Mother Teresa Academy{% endblock %}
 
 {% block content %}
-<div style="max-width:300px; margin:auto;">
-  <form method="POST">
-    {% csrf_token %}
-    <input class="form-control mb-2" name="user_id" placeholder="User ID">
-    <input class="form-control mb-2" type="password" name="password" placeholder="Password">
-    <button class="btn btn-primary w-100">Login</button>
-  </form>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-lg-4">
+            
+            <!-- Login Card -->
+            <div class="card shadow border-0 p-4" style="border-radius: 15px;">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold text-primary">Academy Login</h3>
+                    <p class="text-muted small">Apne account mein login karein</p>
+                </div>
 
-  {% if error %}
-    <p class="text-danger mt-2">{{ error }}</p>
-  {% endif %}
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <!-- User ID Field -->
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">User ID / Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 shadow-none" name="user_id" placeholder="Enter ID" required>
+                        </div>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="mb-2">
+                        <label class="form-label small fw-bold">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control bg-light border-start-0 shadow-none" name="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <!-- Forgot Password Link -->
+                    <div class="text-end mb-4">
+                        <a href="{% url 'password_reset' %}" class="text-decoration-none small fw-bold">Forgot Password?</a>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button class="btn btn-primary w-100 py-2 shadow-sm fw-bold" style="border-radius: 8px;">
+                        Login <i class="bi bi-box-arrow-in-right ms-1"></i>
+                    </button>
+                </form>
+
+                {% if error %}
+                    <div class="alert alert-danger mt-3 py-2 small text-center border-0">
+                        <i class="bi bi-exclamation-triangle-fill"></i> {{ error }}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- New User Help -->
+            <div class="text-center mt-4">
+                <p class="text-muted small">Naya admission chahiye? <a href="{% url 'admission' %}" class="fw-bold">Yahan Apply Karein</a></p>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+<style>
+    /* Focus effects for a real webapp feel */
+    .form-control:focus {
+        background-color: #fff !important;
+        border-color: #0d6efd !important;
+    }
+    .input-group-text {
+        color: #6c757d;
+    }
+</style>
 {% endblock %}

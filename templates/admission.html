@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+    <div class="card shadow-lg border-0 mx-auto" style="max-width: 900px; border-radius: 20px;">
+        <div class="card-header bg-dark text-white text-center py-4" style="border-radius: 20px 20px 0 0;">
+            <h3 class="mb-0 fw-bold text-uppercase">Student Admission Form</h3>
+            <small class="opacity-75">Academic Session 2026-2027</small>
+        </div>
+
+        <div class="card-body p-4 p-md-5">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <!-- Top Section: Photo + Basic Name -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-8">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label fw-bold small text-muted">STUDENT FULL NAME *</label>
+                                <input type="text" name="student_name"
+                                    class="form-control form-control-lg border-secondary-subtle"
+                                    placeholder="As per documents" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small text-muted">CLASS SEEKING *</label>
+                                <select name="admission_class" class="form-select border-secondary-subtle" required>
+                                    <option value="" selected disabled>Select Class</option>
+                                    <option>Nursery</option>
+                                    <option>Class 1</option>
+                                    <option>Class 5</option>
+                                    <option>Class 9</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small text-muted">GENDER *</label>
+                                <select name="gender" class="form-select border-secondary-subtle" required>
+                                    <option value="" selected disabled>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo Upload Section at Top -->
+                    <div class="col-md-4">
+                        <div class="text-center p-3 border border-dashed rounded bg-light">
+                            <label class="form-label fw-bold small text-muted d-block">STUDENT PHOTO *</label>
+                            <i class="bi bi-person-bounding-box display-4 text-secondary"></i>
+                            <input type="file" name="student_photo" class="form-control form-control-sm mt-2" required>
+                            <small class="text-muted d-block mt-1">Passport size (Max 2MB)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Details -->
+                <h6 class="text-primary fw-bold mb-3 border-bottom pb-2">PARENT INFORMATION</h6>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold small text-muted">FATHER'S NAME *</label>
+                        <input type="text" name="father_name" class="form-control border-secondary-subtle" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold small text-muted">MOTHER'S NAME *</label>
+                        <input type="text" name="mother_name" class="form-control border-secondary-subtle" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold small text-muted">PARENT MOBILE NO. *</label>
+                        <input type="tel" name="phone" class="form-control border-secondary-subtle" placeholder="+91"
+                            required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold small text-muted">AADHAAR NUMBER (OPTIONAL)</label>
+                        <input type="text" name="adhar_no" class="form-control border-secondary-subtle"
+                            placeholder="12 Digit Aadhaar">
+                    </div>
+                </div>
+
+                <!-- Address & DOB -->
+                <h6 class="text-primary fw-bold mb-3 border-bottom pb-2">OTHER DETAILS</h6>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold small text-muted">DATE OF BIRTH *</label>
+                        <input type="date" name="dob" class="form-control border-secondary-subtle" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted fw-bold">Date of Admission *</label>
+                        <input type="date" name="admission_date" id="todayDate"
+                            class="form-control shadow-none border-primary" required>
+                    </div>
+
+                    <!-- JavaScript to set default date to Today -->
+                    <script>
+                        document.getElementById('todayDate').valueAsDate = new Date();
+                    </script>
+                    <div class="col-12">
+                        <label class="form-label fw-bold small text-muted">COMPLETE ADDRESS *</label>
+                        <textarea name="address" class="form-control border-secondary-subtle" rows="2"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="alert alert-info py-2 small">
+                    <i class="bi bi-info-circle-fill me-2"></i> Ensure all details match with the student's Aadhaar or
+                    Birth Certificate.
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm"
+                        style="border-radius: 10px;">SUBMIT APPLICATION</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+    }
+
+    .border-dashed {
+        border-style: dashed !important;
+        border-width: 2px !important;
+    }
+</style>
+{% endblock %}

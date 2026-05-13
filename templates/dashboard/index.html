@@ -1,0 +1,111 @@
+{% extends "dashboard/layout.html" %}
+
+{% block title %}Overview | Admin Dashboard{% endblock %}
+
+{% block dashboard_content %}
+<!-- Header -->
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
+    <h1 class="h2 fw-bold text-dark">Admission Overview</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <button type="button" class="btn btn-sm btn-outline-primary shadow-sm">
+            <i class="bi bi-file-earmark-pdf me-1"></i> Export PDF
+        </button>
+    </div>
+</div>
+
+<!-- Stats Cards -->
+<div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3" style="border-left: 5px solid #0d6efd;">
+            <div class="d-flex align-items-center">
+                <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3 text-primary">
+                    <i class="bi bi-people-fill fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="text-muted mb-0">Total Applications</h6>
+                    <h3 class="fw-bold mb-0">{{ total_count }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3" style="border-left: 5px solid #198754;">
+            <div class="d-flex align-items-center">
+                <div class="bg-success bg-opacity-10 p-3 rounded-circle me-3 text-success">
+                    <i class="bi bi-check-circle-fill fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="text-muted mb-0">Nursery Admissions</h6>
+                    <h3 class="fw-bold mb-0">{{ nursery_count|default:"0" }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Data Table Card -->
+<div class="card shadow-sm">
+    <div class="card-header bg-white py-3 border-0">
+        <h5 class="fw-bold text-dark mb-0">Recent Admission Requests</h5>
+    </div>
+    <div class="table-responsive p-3">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Student</th>
+                    <th>Class</th>
+                    <th>Father's Name</th>
+                    <th>Contact</th>
+                    <th>Date</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in admissions %}
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            {% if student.student_photo %}
+                                <img src="{{ student.student_photo.url }}" class="rounded-circle me-3 shadow-sm" width="40" height="40" style="object-fit: cover;">
+                            {% else %}
+                                <div class="bg-secondary rounded-circle me-3 text-white text-center" style="width: 40px; height: 40px; line-height: 40px;">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            {% endif %}
+                            <div>
+                                <div class="fw-bold">{{ student.student_name }}</div>
+                                <small class="text-muted">ID: [Aadhaar Redacted]</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="badge bg-primary-subtle text-primary px-3 rounded-pill">{{ student.admission_class }}</span></td>
+                    <td>{{ student.father_name }}</td>
+                    <td>{{ student.phone }}</td>
+                    <td class="small">{{ student.submitted_at|date:"d M, Y" }}</td>
+                    <td class="text-center">
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-sm btn-light border"><i class="bi bi-eye"></i></button>
+                            
+                            <!-- Delete Form -->
+                            <form action="{% url 'delete_admission' student.id %}" method="POST" onsubmit="return confirm('Kya aap is application ko delete karna chahte hain?');">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="6" class="text-center py-5 text-muted">
+                        <i class="bi bi-inbox fs-1 d-block mb-2"></i>
+                        No admission records found.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

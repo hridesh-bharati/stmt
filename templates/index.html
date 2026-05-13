@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}सेंट मदर टेरेसा अकाडमी, निचलौल | गुणवत्तापूर्ण शिक्षा{% endblock %}
+{% block title %}St. Mother Teresa Academy, Nichlaul | Quality Education{% endblock %}
 
 {% block content %}
-<!-- Bootstrap Icons CDN -->
 
 <!-- Hero Section with Carousel -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -11,12 +10,12 @@
         <div class="carousel-item active">
             <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
-                    <h1 class="display-3 fw-bold mb-3">सेंट मदर टेरेसा अकाडमी, निचलौल</h1>
-                    <p class="fs-4 fst-italic mb-3">"शिक्षा सबसे शक्तिशालील हथियार है जिसका उपयोग दुनिया को बदलने के लिए किया जा सकता है"</p>
-                    <p class="fs-5 mb-4">संस्कार, ज्ञान और सेवा का संगम — गुणवत्तापूर्ण शिक्षा हमारा लक्ष्य</p>
+                    <h1 class="display-3 fw-bold mb-3">St. Mother Teresa Academy, Nichlaul</h1>
+                    <p class="fs-4 fst-italic mb-3">"Education is the most powerful weapon which you can use to change the world"</p>
+                    <p class="fs-5 mb-4">The Confluence of Values, Knowledge & Service — Quality Education is Our Goal</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
-                        <a href="#admission" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"><i class="bi bi-pencil-square me-2"></i>प्रवेश लें</a>
-                        <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-5"><i class="bi bi-info-circle me-2"></i>जानकारी प्राप्त करें</a>
+                        <a href="#admission" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"><i class="bi bi-pencil-square me-2"></i>Admission 2026</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-5"><i class="bi bi-info-circle me-2"></i>Know More</a>
                     </div>
                 </div>
             </div>
@@ -24,52 +23,51 @@
         <div class="carousel-item">
             <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
-                    <h1 class="display-3 fw-bold mb-3">संस्कारों की पाठशाला</h1>
-                    <p class="fs-4 mb-3">नैतिक मूल्यों के साथ आधुनिक शिक्षा</p>
-                    <a href="#facilities" class="btn btn-primary btn-lg rounded-pill px-5"><i class="bi bi-building me-2"></i>हमारी सुविधाएं</a>
+                    <h1 class="display-3 fw-bold mb-3">A School of Values & Excellence</h1>
+                    <p class="fs-4 mb-3">Modern Education with Moral Values</p>
+                    <a href="#facilities" class="btn btn-primary btn-lg rounded-pill px-5"><i class="bi bi-building me-2"></i>Our Facilities</a>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
-                    <h1 class="display-3 fw-bold mb-3">उज्ज्वल भविष्य की नींव</h1>
-                    <p class="fs-4 mb-3">हमारे साथ अपने बच्चों के सपनों को दें नई उड़ान</p>
-                    <a href="#contact" class="btn btn-success btn-lg rounded-pill px-5"><i class="bi bi-telephone-fill me-2"></i>संपर्क करें</a>
+                    <h1 class="display-3 fw-bold mb-3">Foundation for a Bright Future</h1>
+                    <p class="fs-4 mb-3">Give Your Child's Dreams a New Flight With Us</p>
+                    <a href="#contact" class="btn btn-success btn-lg rounded-pill px-5"><i class="bi bi-telephone-fill me-2"></i>Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">पिछला</span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">अगला</span>
+        <span class="visually-hidden">Next</span>
     </button>
 </div>
 
 <!-- Floating Quick Contact Button -->
 <a href="#contact" class="btn btn-danger rounded-pill shadow-lg position-fixed bottom-0 end-0 m-4 z-3" style="background: #dc3545; padding: 12px 24px;">
-    <i class="bi bi-whatsapp me-2"></i>संपर्क करें
+    <i class="bi bi-whatsapp me-2"></i>Enquire Now
 </a>
 
 <div class="container py-5">
-    <!-- Personalized Welcome Message -->
-    {% comment %} <div class="card border-0 shadow-lg mb-5 rounded-4 overflow-hidden">
-        <div class="card-body p-4 p-md-5 text-center" style="background: linear-gradient(135deg, #f0f7ff 0%, #e8f0fe 100%);">
-            {% if request.user.is_authenticated %}
-                <i class="bi bi-mortarboard-fill display-1 text-primary mb-3"></i>
-                <h2 class="display-5 fw-bold text-primary">नमस्ते, {{ request.user.username }} जी! 🙏</h2>
-                <p class="fs-4 mb-0">सेंट मदर टेरेसा अकाडमी में आपका हार्दिक स्वागत है। ज्ञान की इस यात्रा में आपका सहयोग हमारे लिए प्रेरणादायक है।</p>
-            {% else %}
-                <i class="bi bi-flower1 display-1 text-primary mb-3"></i>
-                <h2 class="display-5 fw-bold text-primary">स्वागत है अतिथि जी! 🌷</h2>
-                <p class="fs-4 mb-0">"शिक्षा वह दीपक है जो अंधकार को मिटा देता है" — हमारे विद्यालय परिवार का हिस्सा बनने के लिए <a href="{% url 'login' %}" class="fw-bold text-decoration-none">लॉगिन करें</a> या <a href="#admission" class="fw-bold text-decoration-none">प्रवेश लें</a>।</p>
-            {% endif %}
+    <!-- NEW: Virtual Tour Banner -->
+    <div class="alert alert-primary bg-gradient-primary border-0 rounded-5 shadow-sm mb-5 p-4 text-white text-center" style="background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div>
+                <i class="bi bi-vr fs-1 me-2"></i>
+                <strong class="fs-4">Experience Our Campus Virtually!</strong>
+                <span class="ms-2">Take a 360° tour of our state-of-the-art facilities.</span>
+            </div>
+            <button class="btn btn-light rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#virtualTourModal">
+                <i class="bi bi-play-circle-fill me-1"></i> Virtual Tour
+            </button>
         </div>
-    </div> {% endcomment %}
+    </div>
 
     <!-- About Section -->
     <section id="about" class="mb-5">
@@ -78,31 +76,32 @@
                 <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-4 shadow-lg" alt="School Building">
             </div>
             <div class="col-md-6">
-                <span class="badge bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-pill mb-3">हमारा परिचय</span>
-                <h2 class="display-5 fw-bold mb-3">सेंट मदर टेरेसा अकाडमी, निचलौल</h2>
-                <p class="fs-5 text-muted">सेंट मदर टेरेसा अकाडमी निचलौल में गुणवत्तापूर्ण शिक्षा, संस्कार और सेवा का संगम है। हमारा लक्ष्य बच्चों को एक ऐसा वातावरण प्रदान करना है जहाँ वे न केवल शैक्षणिक रूप से बल्कि नैतिक और सामाजिक रूप से भी सशक्त बन सकें।</p>
+                <span class="badge bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-pill mb-3">About Us</span>
+                <h2 class="display-5 fw-bold mb-3">St. Mother Teresa Academy, Nichlaul</h2>
+                <p class="fs-5 text-muted">St. Mother Teresa Academy in Nichlaul is a confluence of quality education, values, and service. Our goal is to provide an environment where children can become empowered not only academically but also morally and socially.</p>
                 <div class="row mt-4">
                     <div class="col-6">
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="bi bi-calendar-check fs-2 text-primary"></i>
-                            <div><strong>स्थापना वर्ष</strong><br>राष्ट्रीय पाठ्यक्रम</div><br>2015</div>
+                            <div><strong>Established</strong><br>2015</div>
+                        </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="bi bi-people fs-2 text-success"></i>
-                            <div><strong>कुल विद्यार्थी</strong><br>500+ छात्र</div>
+                            <div><strong>Students</strong><br>500+</div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="bi bi-trophy fs-2 text-warning"></i>
-                            <div><strong>पुरस्कार</strong><br>15+ प्रतिष्ठित पुरस्कार</div>
+                            <div><strong>Awards</strong><br>15+ Prestigious</div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="bi bi-person-badge fs-2 text-info"></i>
-                            <div><strong>शिक्षक</strong><br>35+ अनुभवी शिक्षक</div>
+                            <div><strong>Teachers</strong><br>35+</div>
                         </div>
                     </div>
                 </div>
@@ -110,45 +109,50 @@
         </div>
     </section>
 
-    <!-- Key Highlights / Statistics -->
+    <!-- NEW: School At a Glance (Highlights) -->
     <section class="mb-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">School at a Glance</h2>
+            <p class="fs-5 text-muted">Why we are the preferred choice for parents</p>
+            <div class="mx-auto bg-primary" style="height: 4px; width: 70px;"></div>
+        </div>
         <div class="row text-center g-4">
             <div class="col-6 col-lg-3">
                 <div class="stats-card p-4 rounded-4 shadow-sm bg-white">
                     <i class="bi bi-mortarboard-fill display-2 text-primary"></i>
                     <h3 class="display-4 fw-bold text-primary mt-2 mb-0">500+</h3>
-                    <p class="text-secondary mb-0">छात्र संख्या</p>
+                    <p class="text-secondary mb-0">Student Strength</p>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="stats-card p-4 rounded-4 shadow-sm bg-white">
                     <i class="bi bi-person-video3 display-2 text-success"></i>
                     <h3 class="display-4 fw-bold text-success mt-2 mb-0">35+</h3>
-                    <p class="text-secondary mb-0">प्रशिक्षित शिक्षक</p>
+                    <p class="text-secondary mb-0">Expert Faculty</p>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="stats-card p-4 rounded-4 shadow-sm bg-white">
                     <i class="bi bi-book-half display-2 text-info"></i>
                     <h3 class="display-4 fw-bold text-info mt-2 mb-0">10+</h3>
-                    <p class="text-secondary mb-0">कक्षाएं (Nursery-10)</p>
+                    <p class="text-secondary mb-0">Grades (Nursery-10)</p>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="stats-card p-4 rounded-4 shadow-sm bg-white">
                     <i class="bi bi-award display-2 text-warning"></i>
                     <h3 class="display-4 fw-bold text-warning mt-2 mb-0">100%</h3>
-                    <p class="text-secondary mb-0">परीक्षा परिणाम</p>
+                    <p class="text-secondary mb-0">Board Result</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Facilities Section -->
+    <!-- Our Facilities Section (Enhanced) -->
     <section id="facilities" class="py-4 mb-5">
         <div class="text-center mb-5">
-            <span class="badge bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-pill mb-3">हमारी सुविधाएं</span>
-            <h2 class="display-5 fw-bold mb-3">विद्यालय की प्रमुख सुविधाएं</h2>
+            <span class="badge bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-pill mb-3">Our Facilities</span>
+            <h2 class="display-5 fw-bold mb-3">Top-Class Infrastructure</h2>
             <div class="mx-auto bg-primary" style="height: 4px; width: 70px;"></div>
         </div>
         <div class="row g-4">
@@ -157,8 +161,8 @@
                     <div class="icon-circle bg-primary bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-laptop display-4 text-primary"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">स्मार्ट क्लास</h4>
-                    <p class="text-muted">डिजिटल लर्निंग के लिए प्रोजेक्टर और स्मार्ट बोर्ड की सुविधा।</p>
+                    <h4 class="fw-bold mb-3">Smart Classrooms</h4>
+                    <p class="text-muted">Projectors and smart boards for interactive digital learning.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -166,8 +170,8 @@
                     <div class="icon-circle bg-success bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-flask display-4 text-success"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">आधुनिक प्रयोगशाला</h4>
-                    <p class="text-muted">विज्ञान, कंप्यूटर और गणित लैब से लैस।</p>
+                    <h4 class="fw-bold mb-3">Modern Labs</h4>
+                    <p class="text-muted">Equipped with science, computer, and math labs.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -175,8 +179,8 @@
                     <div class="icon-circle bg-warning bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-book display-4 text-warning"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">पुस्तकालय</h4>
-                    <p class="text-muted">5000+ पुस्तकों का संग्रह और पठन कक्ष।</p>
+                    <h4 class="fw-bold mb-3">Library</h4>
+                    <p class="text-muted">A collection of 5000+ books and a dedicated reading room.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -184,8 +188,8 @@
                     <div class="icon-circle bg-info bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-people display-4 text-info"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">खेल मैदान</h4>
-                    <p class="text-muted">क्रिकेट, फुटबॉल, बैडमिंटन और योगा की सुविधा।</p>
+                    <h4 class="fw-bold mb-3">Playground & Sports</h4>
+                    <p class="text-muted">Cricket, football, badminton, and yoga facilities.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -193,8 +197,8 @@
                     <div class="icon-circle bg-danger bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-bus-front display-4 text-danger"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">परिवहन सुविधा</h4>
-                    <p class="text-muted">निचलौल और आसपास के क्षेत्रों के लिए बस सुविधा।</p>
+                    <h4 class="fw-bold mb-3">Transport</h4>
+                    <p class="text-muted">Bus facility for Nichlaul and surrounding areas.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -202,8 +206,8 @@
                     <div class="icon-circle bg-secondary bg-opacity-10 mx-auto mb-3">
                         <i class="bi bi-shield-check display-4 text-secondary"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">सुरक्षित वातावरण</h4>
-                    <p class="text-muted">सीसीटीवी कैमरा, सुरक्षा गार्ड और ऑन-कॉल डॉक्टर।</p>
+                    <h4 class="fw-bold mb-3">Safe Environment</h4>
+                    <p class="text-muted">CCTV cameras, security guards, and on-call doctor.</p>
                 </div>
             </div>
         </div>
@@ -213,8 +217,8 @@
     <section class="mb-5 py-4 bg-light rounded-5 px-4 px-md-5">
         <div class="text-center mb-5">
             <i class="bi bi-diagram-3 display-3 text-primary"></i>
-            <h2 class="display-5 fw-bold mb-3">शैक्षणिक कार्यक्रम</h2>
-            <p class="fs-5 text-muted">CBSE पैटर्न पर आधारित गुणवत्तापूर्ण शिक्षा</p>
+            <h2 class="display-5 fw-bold mb-3">Academic Programs</h2>
+            <p class="fs-5 text-muted">Quality education based on the CBSE pattern</p>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
@@ -222,8 +226,8 @@
                     <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-4 mb-3">
                         <i class="bi bi-emoji-smile display-3 text-primary"></i>
                     </div>
-                    <h4 class="fw-bold">प्री-प्राइमरी (Nursery - UKG)</h4>
-                    <p class="text-muted">खेल-खेल में सीखना, कहानी सत्र, कला और संगीत की शिक्षा। बच्चों को स्कूली जीवन से जोड़ने का प्रारंभिक चरण।</p>
+                    <h4 class="fw-bold">Pre-Primary (Nursery - UKG)</h4>
+                    <p class="text-muted">Learn through play, story sessions, art, and music. The initial stage to connect children to school life.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -231,8 +235,8 @@
                     <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex p-4 mb-3">
                         <i class="bi bi-book-half display-3 text-success"></i>
                     </div>
-                    <h4 class="fw-bold">प्राइमरी (कक्षा 1-5)</h4>
-                    <p class="text-muted">हिंदी, अंग्रेजी, गणित, विज्ञान, सामाजिक विज्ञान और कंप्यूटर की बुनियादी शिक्षा।</p>
+                    <h4 class="fw-bold">Primary (Grades 1-5)</h4>
+                    <p class="text-muted">Foundational education in Hindi, English, Math, Science, Social Studies, and Computers.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -240,8 +244,8 @@
                     <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex p-4 mb-3">
                         <i class="bi bi-rocket-takeoff display-3 text-warning"></i>
                     </div>
-                    <h4 class="fw-bold">माध्यमिक (कक्षा 6-10)</h4>
-                    <p class="text-muted">प्रतियोगिता की तैयारी, करियर काउंसलिंग, विशेष कोचिंग कक्षाएं और प्रयोगात्मक शिक्षा।</p>
+                    <h4 class="fw-bold">Secondary (Grades 6-10)</h4>
+                    <p class="text-muted">Competition preparation, career counseling, special coaching, and experiential learning.</p>
                 </div>
             </div>
         </div>
@@ -251,14 +255,14 @@
     <section id="admission" class="my-5">
         <div class="bg-gradient-primary rounded-5 p-5 text-white text-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
             <i class="bi bi-mortarboard display-1 mb-3"></i>
-            <h2 class="display-5 fw-bold mb-3">सत्र 2026-27 के लिए प्रवेश प्रारंभ</h2>
-            <p class="fs-5 mb-4">सीटें सीमित हैं। जल्दी करें और अपने बच्चे का भविष्य सुरक्षित करें। आज ही संपर्क करें।</p>
+            <h2 class="display-5 fw-bold mb-3">Admission Open for Session 2026-27</h2>
+            <p class="fs-5 mb-4">Seats are limited. Secure your child's future today. Contact us now for registration.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
                 <button class="btn btn-light btn-lg rounded-pill px-5 fw-bold" data-bs-toggle="modal" data-bs-target="#admissionModal">
-                    <i class="bi bi-pencil-square me-2"></i>ऑनलाइन आवेदन करें
+                    <i class="bi bi-pencil-square me-2"></i>Apply Online
                 </button>
                 <button class="btn btn-outline-light btn-lg rounded-pill px-5">
-                    <i class="bi bi-download me-2"></i>प्रॉस्पेक्टस डाउनलोड करें
+                    <i class="bi bi-download me-2"></i>Download Prospectus
                 </button>
             </div>
         </div>
@@ -267,8 +271,8 @@
     <!-- Photo Gallery -->
     <section class="my-5">
         <div class="text-center mb-5">
-            <span class="badge bg-info bg-opacity-10 text-info px-4 py-2 rounded-pill mb-3">यादों का झरोखा</span>
-            <h2 class="display-5 fw-bold mb-3">हमारी गैलरी</h2>
+            <span class="badge bg-info bg-opacity-10 text-info px-4 py-2 rounded-pill mb-3">Moments of Joy</span>
+            <h2 class="display-5 fw-bold mb-3">Our Gallery</h2>
             <div class="mx-auto bg-info" style="height: 4px; width: 70px;"></div>
         </div>
         <div class="row g-3">
@@ -307,7 +311,7 @@
         </div>
         <div class="text-center mt-4">
             <button class="btn btn-outline-primary rounded-pill px-5" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                <i class="bi bi-images me-2"></i>पूरी गैलरी देखें
+                <i class="bi bi-images me-2"></i>View Full Gallery
             </button>
         </div>
     </section>
@@ -316,166 +320,201 @@
     <section class="my-5 py-4 bg-light rounded-5">
         <div class="text-center mb-5">
             <i class="bi bi-chat-quote-fill display-3 text-primary"></i>
-            <h2 class="display-5 fw-bold mb-3">अभिभावकों और छात्रों के विचार</h2>
-            <p class="fs-5 text-muted">हमारे विद्यालय परिवार का प्यार और विश्वास</p>
+            <h2 class="display-5 fw-bold mb-3">What Parents & Students Say</h2>
+            <p class="fs-5 text-muted">Trust and love from our school family</p>
         </div>
         <div class="row g-4 px-4">
             <div class="col-md-4">
                 <div class="testimonial-card p-4 rounded-4 bg-white shadow-sm h-100">
                     <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
-                    <p class="fst-italic mt-3 fs-5">"बहुत अच्छा स्कूल है। शिक्षक बहुत स्नेही और अनुभवी हैं। मेरे बच्चे को यहाँ पढ़कर बहुत खुशी होती है।"</p>
-                    <h6 class="fw-bold mb-0">— राधा देवी</h6>
-                    <small class="text-muted">छात्र के अभिभावक</small>
+                    <p class="fst-italic mt-3 fs-5">"An excellent school. The teachers are caring and experienced. My child is very happy studying here."</p>
+                    <h6 class="fw-bold mb-0">— Mrs. Radha Devi</h6>
+                    <small class="text-muted">Parent</small>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial-card p-4 rounded-4 bg-white shadow-sm h-100">
                     <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
-                    <p class="fst-italic mt-3 fs-5">"मैंने यहाँ से 10वीं पास की है। शिक्षकों के मार्गदर्शन से मैंने बहुत कुछ सीखा। सबसे अच्छा स्कूल है निचलौल में।"</p>
-                    <h6 class="fw-bold mb-0">— सोनम कुमारी</h6>
-                    <small class="text-muted">पूर्व छात्रा (Class of 2024)</small>
+                    <p class="fst-italic mt-3 fs-5">"I passed my 10th from here. I learned a lot with the guidance of my teachers. The best school in Nichlaul."</p>
+                    <h6 class="fw-bold mb-0">— Sonam Kumari</h6>
+                    <small class="text-muted">Alumni (Class of 2024)</small>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial-card p-4 rounded-4 bg-white shadow-sm h-100">
                     <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
-                    <p class="fst-italic mt-3 fs-5">"बच्चों के सर्वांगीण विकास पर ध्यान दिया जाता है। खेल, शिक्षा और संस्कार तीनों बराबर हैं।"</p>
-                    <h6 class="fw-bold mb-0">— राजेश सिंह</h6>
-                    <small class="text-muted">अभिभावक</small>
+                    <p class="fst-italic mt-3 fs-5">"Equal focus on sports, education, and values. They truly care about holistic development."</p>
+                    <h6 class="fw-bold mb-0">— Mr. Rajesh Singh</h6>
+                    <small class="text-muted">Parent</small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Upcoming Events & Notice Board -->
+    <!-- NEW: Achievement / Our Toppers Section -->
+    <section class="my-5 py-4">
+        <div class="text-center mb-5">
+            <i class="bi bi-trophy-fill display-3 text-warning"></i>
+            <h2 class="display-5 fw-bold mb-3">Academic Achievements 2025</h2>
+            <p class="fs-5 text-muted">Our brilliant stars who made us proud</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 text-center p-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle w-50 mx-auto shadow-sm mb-3 border border-4 border-warning" alt="Topper">
+                    <h4 class="fw-bold">Anjali Verma</h4>
+                    <p class="text-primary fw-bold">Class 10 | 96.8%</p>
+                    <span class="badge bg-warning text-dark rounded-pill">School Topper</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 text-center p-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle w-50 mx-auto shadow-sm mb-3 border border-4 border-warning" alt="Topper">
+                    <h4 class="fw-bold">Rohan Singh</h4>
+                    <p class="text-primary fw-bold">Class 10 | 95.2%</p>
+                    <span class="badge bg-warning text-dark rounded-pill">Second Topper</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 text-center p-4">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle w-50 mx-auto shadow-sm mb-3 border border-4 border-warning" alt="Topper">
+                    <h4 class="fw-bold">Kavya Gupta</h4>
+                    <p class="text-primary fw-bold">Class 10 | 94.5%</p>
+                    <span class="badge bg-warning text-dark rounded-pill">Third Topper</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events & Notice Board (Keep as is, but with English content) -->
     <div class="row g-4 my-5">
         <div class="col-md-6">
             <div class="card border-0 shadow-lg rounded-4 h-100">
                 <div class="card-header bg-white border-0 pt-4 pb-0">
-                    <h3 class="h2 fw-bold text-primary mb-0"><i class="bi bi-calendar-event-fill me-2"></i>आगामी कार्यक्रम</h3>
+                    <h3 class="h2 fw-bold text-primary mb-0"><i class="bi bi-calendar-event-fill me-2"></i>Upcoming Events</h3>
                 </div>
                 <div class="card-body p-4">
                     <div class="event-item d-flex align-items-start mb-4 pb-2 border-bottom">
                         <div class="event-date bg-primary text-white rounded-3 text-center p-2 me-3" style="min-width: 70px;">
                             <div class="fw-bold fs-4">15</div>
-                            <div class="small">मई</div>
+                            <div class="small">May</div>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-1">वार्षिक खेल दिवस</h5>
-                            <p class="text-muted mb-1">सभी वर्गों के लिए प्रतियोगिताएं और पुरस्कार वितरण</p>
-                            <small><i class="bi bi-geo-alt-fill me-1"></i>विद्यालय मैदान | सुबह 8:00 बजे</small>
+                            <h5 class="fw-bold mb-1">Annual Sports Day</h5>
+                            <p class="text-muted mb-1">Competitions and prize distribution for all grades.</p>
+                            <small><i class="bi bi-geo-alt-fill me-1"></i>School Ground | 8:00 AM</small>
                         </div>
                     </div>
                     <div class="event-item d-flex align-items-start mb-4 pb-2 border-bottom">
                         <div class="event-date bg-success text-white rounded-3 text-center p-2 me-3" style="min-width: 70px;">
                             <div class="fw-bold fs-4">22</div>
-                            <div class="small">मई</div>
+                            <div class="small">May</div>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-1">विज्ञान प्रदर्शनी</h5>
-                            <p class="text-muted mb-1">छात्रों द्वारा बनाए गए मॉडलों की प्रदर्शनी</p>
-                            <small><i class="bi bi-building me-1"></i>विज्ञान प्रयोगशाला | सुबह 10:00 बजे</small>
+                            <h5 class="fw-bold mb-1">Science Exhibition</h5>
+                            <p class="text-muted mb-1">Exhibition of models made by students.</p>
+                            <small><i class="bi bi-building me-1"></i>Science Lab | 10:00 AM</small>
                         </div>
                     </div>
                     <div class="event-item d-flex align-items-start">
                         <div class="event-date bg-info text-white rounded-3 text-center p-2 me-3" style="min-width: 70px;">
                             <div class="fw-bold fs-4">5</div>
-                            <div class="small">जून</div>
+                            <div class="small">June</div>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-1">नए सत्र का शुभारंभ</h5>
-                            <p class="text-muted mb-1">नए छात्रों के लिए ओरिएंटेशन और पुस्तक वितरण</p>
+                            <h5 class="fw-bold mb-1">New Session Begins</h5>
+                            <p class="text-muted mb-1">Orientation for new students and book distribution.</p>
                         </div>
                     </div>
                 </div>
                 <div class="card-footer bg-white border-0 pb-4">
-                    <button class="btn btn-outline-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#eventsModal">सभी कार्यक्रम देखें</button>
+                    <button class="btn btn-outline-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#eventsModal">View All Events</button>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card border-0 shadow-lg rounded-4 h-100">
                 <div class="card-header bg-white border-0 pt-4 pb-0">
-                    <h3 class="h2 fw-bold text-primary mb-0"><i class="bi bi-megaphone-fill me-2"></i>सूचना बोर्ड</h3>
+                    <h3 class="h2 fw-bold text-primary mb-0"><i class="bi bi-megaphone-fill me-2"></i>Notice Board</h3>
                 </div>
                 <div class="card-body p-4">
                     <div class="notice-item p-3 mb-3 rounded-3 bg-light">
                         <i class="bi bi-check-circle-fill text-success me-2"></i>
-                        <strong>नए छात्रों के लिए प्रवेश सत्र प्रारंभ</strong>
-                        <p class="mb-0 text-muted small mt-1">कक्षा Nursery से 10 तक सीमित सीटें उपलब्ध। आवेदन की अंतिम तिथि: 31 मई 2026</p>
+                        <strong>Admission Open for New Session</strong>
+                        <p class="mb-0 text-muted small mt-1">Limited seats available from Nursery to Grade 10. Last date to apply: May 31, 2026.</p>
                     </div>
                     <div class="notice-item p-3 mb-3 rounded-3 bg-light">
                         <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
-                        <strong>वार्षिक परीक्षा परिणाम घोषित</strong>
-                        <p class="mb-0 text-muted small mt-1">सभी कक्षाओं के परिणाम स्कूल के सूचना पटल पर उपलब्ध हैं।</p>
+                        <strong>Annual Exam Results Declared</strong>
+                        <p class="mb-0 text-muted small mt-1">Results for all grades are available on the school notice board.</p>
                     </div>
                     <div class="notice-item p-3 mb-3 rounded-3 bg-light">
                         <i class="bi bi-calendar-day-fill text-info me-2"></i>
-                        <strong>गर्मी की छुट्टियां</strong>
-                        <p class="mb-0 text-muted small mt-1">20 मई से 30 जून 2026 तक विद्यालय बंद रहेगा।</p>
+                        <strong>Summer Vacation</strong>
+                        <p class="mb-0 text-muted small mt-1">School will remain closed from May 20 to June 30, 2026.</p>
                     </div>
                     <div class="notice-item p-3 rounded-3 bg-light">
                         <i class="bi bi-trophy-fill text-primary me-2"></i>
-                        <strong>गणित ओलंपियाड पुरस्कार</strong>
-                        <p class="mb-0 text-muted small mt-1">हमारे 5 छात्रों ने जिला स्तरीय ओलंपियाड में पुरस्कार प्राप्त किए। बधाई! 🎉</p>
+                        <strong>Math Olympiad Awards</strong>
+                        <p class="mb-0 text-muted small mt-1">Congratulations to our 5 students who won awards at the district level! 🎉</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FAQ Accordion -->
+    <!-- FAQ Accordion (English) -->
     <section class="my-5">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold mb-3">अक्सर पूछे जाने वाले प्रश्न</h2>
+            <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
             <div class="mx-auto bg-primary" style="height: 4px; width: 70px;"></div>
         </div>
         <div class="accordion shadow rounded-4 overflow-hidden" id="faqAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                        <i class="bi bi-question-circle-fill me-2 text-primary"></i> प्रवेश के लिए क्या दस्तावेज चाहिए?
+                        <i class="bi bi-question-circle-fill me-2 text-primary"></i> What documents are required for admission?
                     </button>
                 </h2>
                 <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        प्रवेश के लिए निम्नलिखित दस्तावेज आवश्यक हैं: (1) छात्र का जन्म प्रमाण पत्र, (2) पिछले विद्यालय का मार्कशीट और ट्रांसफर सर्टिफिकेट, (3) आधार कार्ड की छायाप्रति, (4) पासपोर्ट साइज फोटो (4 नग), (5) अभिभावक के आधार कार्ड की छायाप्रति।
+                        The following documents are required: (1) Student's birth certificate, (2) Previous school's mark sheet and transfer certificate, (3) Copy of Aadhar card, (4) 4 passport-size photos, (5) Copy of parent's Aadhar card.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                        <i class="bi bi-cash-stack me-2 text-success"></i> फीस संरचना क्या है?
+                        <i class="bi bi-cash-stack me-2 text-success"></i> What is the fee structure?
                     </button>
                 </h2>
                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        हमारी फीस काफी सस्ती और सामान्य परिवारों के लिए उचित है। प्री-प्राइमरी (Nursery-UKG) के लिए ₹800/माह, प्राइमरी (कक्षा 1-5) के लिए ₹1000/माह, माध्यमिक (कक्षा 6-10) के लिए ₹1200/माह है। वार्षिक शुल्क, परीक्षा शुल्क और डेवलपमेंट फंड अलग से लिया जाता है।
+                        Our fees are affordable for all families. Pre-Primary (Nursery-UKG): ₹800/month, Primary (Grades 1-5): ₹1000/month, Secondary (Grades 6-10): ₹1200/month. Annual charges, exam fees, and development fund are separate.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                        <i class="bi bi-bus-front me-2 text-danger"></i> क्या स्कूल बस की सुविधा है?
+                        <i class="bi bi-bus-front me-2 text-danger"></i> Does the school provide bus facility?
                     </button>
                 </h2>
                 <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        हाँ, स्कूल की अपनी 3 बसें हैं। निचलौल से लगभग 10 किलोमीटर के दायरे के गांवों — सोनौली, फरेंदा, धानी, बरगदवा, कोटवा आदि के लिए परिवहन सुविधा उपलब्ध है। बस फीस ₹300/माह अतिरिक्त है।
+                        Yes, the school has its own buses. Transport is available for villages within 10 km of Nichlaul, including Sonauli, Farenda, Dhani, Bargadwa, Kotwa, etc. Bus fee is ₹300/month extra.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                        <i class="bi bi-mortarboard me-2 text-info"></i> क्या मुझे शैक्षणिक टूर या एडवेंचर कैंप मिलते हैं?
+                        <i class="bi bi-mortarboard me-2 text-info"></i> Are there educational tours or adventure camps?
                     </button>
                 </h2>
                 <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        हाँ, हर साल हम छात्रों के लिए एक शैक्षणिक भ्रमण और एडवेंचर कैंप का आयोजन करते हैं। पिछले साल छात्र नैनीताल गए थे। यह छात्रों के सर्वांगीण विकास के लिए बहुत लाभदायक है।
+                        Yes, we organize an educational tour and adventure camp every year. Last year, students visited Nainital. This is very beneficial for the overall development of the students.
                     </div>
                 </div>
             </div>
@@ -498,33 +537,32 @@
         </div>
         <div class="col-md-6">
             <div class="bg-light rounded-4 p-4 shadow-lg h-100">
-                <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>हमसे संपर्क करें</h3>
+                <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Contact Us</h3>
                 <div class="mb-4">
-                    <p class="mb-2"><i class="bi bi-pin-map-fill text-primary me-2"></i><strong>पता:</strong></p>
-                    <p class="text-muted ps-4">सेंट मदर टेरेसा अकाडमी, वार्ड नंबर 5, कॉलेज रोड, निचलौल, महाराजगंज जिला, उत्तर प्रदेश - 273304</p>
+                    <p class="mb-2"><i class="bi bi-pin-map-fill text-primary me-2"></i><strong>Address:</strong></p>
+                    <p class="text-muted ps-4">St. Mother Teresa Academy, Ward No. 5, College Road, Nichlaul, Maharajganj District, Uttar Pradesh - 273304</p>
                 </div>
                 <div class="mb-4">
-                    <p class="mb-2"><i class="bi bi-telephone-fill text-success me-2"></i><strong>फोन नंबर:</strong></p>
-                    <p class="text-muted ps-4">📞 +91 98765 12345 (प्राचार्य कक्ष)<br>📞 +91 87654 32109 (प्रवेश शाखा)</p>
+                    <p class="mb-2"><i class="bi bi-telephone-fill text-success me-2"></i><strong>Phone:</strong></p>
+                    <p class="text-muted ps-4">📞 +91 98765 12345 (Principal's Office)<br>📞 +91 87654 32109 (Admission Helpline)</p>
                 </div>
                 <div class="mb-4">
-                    <p class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i><strong>ईमेल:</strong></p>
+                    <p class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i><strong>Email:</strong></p>
                     <p class="text-muted ps-4">✉️ info@stmta-nichlaul.org<br>✉️ admission@stmta-nichlaul.org</p>
                 </div>
                 <div>
-                    <p class="mb-2"><i class="bi bi-clock-fill text-info me-2"></i><strong>कार्यालय समय:</strong></p>
-                    <p class="text-muted ps-4">🕙 सोमवार - शनिवार: सुबह 8:00 बजे से शाम 4:00 बजे तक<br>🙏 रविवार: अवकाश</p>
+                    <p class="mb-2"><i class="bi bi-clock-fill text-info me-2"></i><strong>Office Hours:</strong></p>
+                    <p class="text-muted ps-4">🕙 Monday - Saturday: 8:00 AM to 4:00 PM<br>🙏 Sunday: Closed</p>
                 </div>
                 <div class="mt-4">
                     <a href="https://wa.me/919876512345" class="btn btn-success rounded-pill me-2"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
                     <a href="#" class="btn btn-primary rounded-pill"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                    <a href="#" class="btn btn-info rounded-pill text-white"><i class="bi bi-instagram me-2"></i>Instagram</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Footer -->
 
 <!-- Modals -->
 <!-- Admission Modal -->
@@ -532,22 +570,22 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-4">
             <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold"><i class="bi bi-pencil-square text-primary me-2"></i>प्रवेश फॉर्म (रजिस्ट्रेशन)</h5>
+                <h5 class="modal-title fw-bold"><i class="bi bi-pencil-square text-primary me-2"></i>Admission Registration</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p class="text-success mb-3">कृपया नीचे जानकारी भरें। हमारी टीम जल्द ही आपसे संपर्क करेगी।</p>
+                <p class="text-success mb-3">Please fill in the details below. Our team will contact you shortly.</p>
                 <form>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold">बच्चे का पूरा नाम</label>
-                        <input type="text" class="form-control rounded-pill" placeholder="जैसे: रिया सिंह">
+                        <label class="form-label fw-semibold">Student's Full Name</label>
+                        <input type="text" class="form-control rounded-pill" placeholder="e.g., Riya Singh">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold">जन्म तिथि</label>
+                        <label class="form-label fw-semibold">Date of Birth</label>
                         <input type="date" class="form-control rounded-pill">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold">कक्षा जिसमें प्रवेश चाहिए</label>
+                        <label class="form-label fw-semibold">Applying for Grade</label>
                         <select class="form-select rounded-pill">
                             <option>Nursery</option><option>LKG</option><option>UKG</option>
                             <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option>
@@ -556,17 +594,17 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold">अभिभावक का नाम और मोबाइल नंबर</label>
+                        <label class="form-label fw-semibold">Parent's Name & Mobile Number</label>
                         <input type="text" class="form-control rounded-pill" placeholder="+91 XXXXX XXXXX">
                     </div>
                     <div class="alert alert-info small rounded-pill text-center">
-                        <i class="bi bi-info-circle me-2"></i> रजिस्ट्रेशन के बाद हम आपको दस्तावेज़ और फीस की जानकारी भेजेंगे।
+                        <i class="bi bi-info-circle me-2"></i> After registration, we will send you document and fee details.
                     </div>
                 </form>
             </div>
             <div class="modal-footer border-0">
-                <button class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">बंद करें</button>
-                <button class="btn btn-primary rounded-pill px-4">रजिस्ट्रेशन करें</button>
+                <button class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary rounded-pill px-4">Register Now</button>
             </div>
         </div>
     </div>
@@ -577,7 +615,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content rounded-4">
             <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold">फोटो गैलरी</h5>
+                <h5 class="modal-title fw-bold">Photo Gallery</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
@@ -605,27 +643,47 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-4">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold"><i class="bi bi-calendar3 me-2"></i>सभी आगामी कार्यक्रम</h5>
+                <h5 class="modal-title fw-bold"><i class="bi bi-calendar3 me-2"></i>All Upcoming Events</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
                 <div class="list-group list-group-flush">
                     <div class="list-group-item border-0 py-3">
-                        <h6 class="fw-bold">15 मई 2026 - वार्षिक खेल दिवस</h6>
-                        <p class="mb-0 text-muted small">रजिस्ट्रेशन 10 मई तक करें। सभी छात्रों की भागीदारी अनिवार्य।</p>
+                        <h6 class="fw-bold">May 15, 2026 - Annual Sports Day</h6>
+                        <p class="mb-0 text-muted small">Register by May 10. Participation is mandatory for all students.</p>
                     </div>
                     <div class="list-group-item border-0 py-3">
-                        <h6 class="fw-bold">22 मई 2026 - विज्ञान प्रदर्शनी</h6>
-                        <p class="mb-0 text-muted small">हर कक्षा से कम से कम 2 प्रोजेक्ट जमा करने होंगे।</p>
+                        <h6 class="fw-bold">May 22, 2026 - Science Exhibition</h6>
+                        <p class="mb-0 text-muted small">Each class must submit at least 2 projects.</p>
                     </div>
                     <div class="list-group-item border-0 py-3">
-                        <h6 class="fw-bold">5 जून 2026 - नए सत्र का शुभारंभ</h6>
-                        <p class="mb-0 text-muted small">नए छात्रों का ओरिएंटेशन और यूनिफार्म वितरण।</p>
+                        <h6 class="fw-bold">June 5, 2026 - New Session Begins</h6>
+                        <p class="mb-0 text-muted small">Orientation for new students and uniform distribution.</p>
                     </div>
                     <div class="list-group-item border-0 py-3">
-                        <h6 class="fw-bold">15 जुलाई 2026 - अभिभावक-शिक्षक बैठक</h6>
-                        <p class="mb-0 text-muted small">सत्र के पहले मूल्यांकन के लिए मुलाकात।</p>
+                        <h6 class="fw-bold">July 15, 2026 - Parent-Teacher Meeting</h6>
+                        <p class="mb-0 text-muted small">Meeting for the first evaluation of the session.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NEW: Virtual Tour Modal -->
+<div class="modal fade" id="virtualTourModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold"><i class="bi bi-vr me-2"></i>Virtual Campus Tour</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/YwmE4ndUjdM?si=h7bU2vF1H3mKj5Qr" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="p-3 bg-light">
+                    <p class="mb-0">Explore our smart classrooms, labs, library, playgrounds, and more. This virtual tour gives you a glimpse of the vibrant learning environment at St. Mother Teresa Academy.</p>
                 </div>
             </div>
         </div>
@@ -646,8 +704,63 @@
         max-width: 850px;
         padding: 2rem;
     }
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .gallery-item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .overlay {
+        opacity: 1;
+    }
+    .stats-card, .facility-card, .testimonial-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .stats-card:hover, .facility-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    .testimonial-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+    }
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+    }
+    .btn-outline-light:hover {
+        background: rgba(255,255,255,0.1);
+    }
+    .event-date {
+        width: 70px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .notice-item {
+        transition: all 0.2s ease;
+        border-left: 4px solid transparent;
+    }
+    .notice-item:hover {
+        background: #f8f9fa !important;
+        border-left-color: #0d6efd;
+    }
 </style>
 
-
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS (already in base.html, but modal depends on it) -->
+<!-- Ensure Bootstrap JS is loaded in base.html -->
 {% endblock %}
