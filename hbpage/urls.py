@@ -3,6 +3,7 @@ from django.urls import path
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static 
+from .views import delete_inquiry
 
 from .views import (
     homePage,
@@ -13,7 +14,8 @@ from .views import (
     dashboardPage,
     loginUser,
     logoutUser,
-    delete_admission
+    delete_admission,
+    register_student
 )
 
 urlpatterns = [
@@ -30,6 +32,10 @@ urlpatterns = [
     path('login/', loginUser, name="login"),
     path('logout/', logoutUser, name="logout"),
     path('dashboard/delete/<int:pk>/', delete_admission, name="delete_admission"),
+    path('register/', register_student, name='register_student'),
+    
+    
+    path('delete-inquiry/<int:id>/', delete_inquiry, name='delete_inquiry'),
 
     # =========================
     # PASSWORD RESET SYSTEM

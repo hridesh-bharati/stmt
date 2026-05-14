@@ -8,7 +8,7 @@
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/media/carousel-3.jpg') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
                     <h1 class="display-3 fw-bold mb-3">St. Mother Teresa Academy, Nichlaul</h1>
                     <p class="fs-4 fst-italic mb-3">"Education is the most powerful weapon which you can use to change the world"</p>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/media/carousel-3.jpg') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
                     <h1 class="display-3 fw-bold mb-3">A School of Values & Excellence</h1>
                     <p class="fs-4 mb-3">Modern Education with Moral Values</p>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/media/carousel-3.jpg') center/cover no-repeat;">
                 <div class="hero-content text-center text-white">
                     <h1 class="display-3 fw-bold mb-3">Foundation for a Bright Future</h1>
                     <p class="fs-4 mb-3">Give Your Child's Dreams a New Flight With Us</p>
@@ -704,35 +704,6 @@
         max-width: 850px;
         padding: 2rem;
     }
-    .gallery-item {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    .gallery-item .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.6);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    .gallery-item:hover .overlay {
-        opacity: 1;
-    }
-    .stats-card, .facility-card, .testimonial-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .stats-card:hover, .facility-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-    }
-    .testimonial-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
-    }
     .icon-circle {
         width: 80px;
         height: 80px;
@@ -761,6 +732,4 @@
     }
 </style>
 
-<!-- Bootstrap JS (already in base.html, but modal depends on it) -->
-<!-- Ensure Bootstrap JS is loaded in base.html -->
 {% endblock %}
